@@ -7,7 +7,7 @@
 body{
 	margin:0;
 	padding:0;
-	background-color:#fff;
+	background-color:hsla(211,100%, 68%,0.5);
 }
  img{
  	display: block;
@@ -15,3 +15,223 @@ body{
  }
 [class*="col-"]{
     width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#footer {
+    padding:15px 0px;
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.5;
+}
+.container{
+	width:100%;
+	margin: 0 auto;
+}
+header{
+ background:#ff0000;
+}
+.nav{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+   
+}
+.nav ul{
+	list-style: none;
+	padding: 0 ;
+	margin: 0;
+	display: flex;
+	align-items: center;
+
+}
+.nav > .menu > ul > li a{
+	text-decoration: none;
+	color: #00ffff;
+	display: block;
+	font-size: 9px;
+	margin-right: 12px;
+	font-family: Roboto;
+}
+.nav > .menu > ul > li:last-child a{
+	margin-right: 0;
+	border-radius:25px;
+	border: 1px solid  blue;
+	color: blue;
+	vertical-align:middle;
+	display: block;
+	transition: all 0.3s;
+	padding: 5px 20px;
+}
+.nav > .menu > ul > li:last-child:hover a{
+	color: red;
+
+}
+.nav > .menu > ul > li{
+	position: relative;
+}
+.nav > .menu > ul > li:last-child a{
+	margin-right: 0;
+	border-radius:25px;
+	border: 1px solid  blue;
+	color: blue;
+	vertical-align:middle;
+	display: block;
+	transition: all 0.3s;
+	padding: 5px 20px;
+}
+.nav ul li .sub{
+	display: none;
+}
+#main-contents .box{
+	padding:  15px ;
+
+}
+#main-contents .box img{
+	width: 100%;
+	margin-bottom: 15px;
+	display: inline-block;
+}
+
+#main-contents .box p{
+	font-weight: 400;
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+#main-contents .box h2{
+	color: blue;
+}
+#banner .picture{
+	position: relative;
+}
+#banner .title{
+		position: absolute;
+		top: 40px;
+	    left: 100px;
+	    padding: 40px 25px;
+
+	}
+
+#banner .title h1{
+	color:#00ffff;
+	font-weight: 3000;
+	font-family:'Roboto';
+	line-height: 1;
+	margin-bottom: 10px;
+}
+#banner .title p{
+	color: #00ffff;
+	font-family:'Roboto';
+	line-height: 1;
+}
+
+#banner .picture img{
+	width: 100%;
+	display: inline-block;
+}
+@media only screen and (min-width: 992px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+    .container{
+    	width: 1200px;
+
+	}
+	#main-contents .box{
+		padding-left:15px ;
+
+	}
+	header{
+	 background:#fff;
+	}
+	.nav > .menu > ul > li a {
+	    color: ff0000;
+	    font-size: 10px;
+	    margin-right: 15px;
+	}
+	.nav ul li a {
+	    padding: 0px 20px;
+	}
+	.nav ul li > .sub{
+		position: absolute;
+		top: 100%;
+		left: 0;
+		background-color: transparent;
+		width: 150px;
+		max-height: 0;
+		transition: max-height 0.3s;
+		display: block;
+		overflow: hidden;
+	}
+	.nav ul li > .sub ul{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		padding: 10px;
+	}
+	.nav ul li:hover > .sub{
+		max-height: 130px;
+	}
+	.nav ul li > .sub ul li {
+		 display: block;
+   		 width: 100%;
+   		 transition: all 0.3s;
+	}
+	.nav ul li > .sub ul li a{
+		padding: 10px 0px ;
+		display: block;
+		transition: all 0.3s;
+		color: #000;
+		text-decoration: none;
+	}
+	   
+	.nav ul li > .sub ul li:hover{
+		background-color: #fff;
+	}
+	.nav ul li > .sub ul li{
+			border-bottom: 1px solid blue;
+		}
+	.nav ul li > .sub ul > li:last-child {
+		border-bottom: none;
+	}
+	
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+    .container{
+		width: 768px;
+	}
+	header{
+	 background:gray;
+	}
+
+}
+

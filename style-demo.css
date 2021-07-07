@@ -51,8 +51,8 @@ body{
 .nav ul li:last-child a{
 	margin-right: 0;
 	border-radius:25px;
-	border: 1px solid  #00ffff;
-	color: #00ffff;
+	border: 1px solid  blue;
+	color: blue;
 	vertical-align:middle;
 	display: block;
 	transition: all 0.3s;
@@ -69,7 +69,7 @@ body{
 		position: absolute;
 		top: 40px;
 	    left: 100px;
-	    padding 40px 25px;
+	    padding: 40px 25px;
 
 	}
 
@@ -84,6 +84,7 @@ body{
 	color: #00ffff;
 	font-family:'Roboto';
 	line-height: 1;
+	 left: 50px;
 }
 
 #banner .picture img{
@@ -96,6 +97,7 @@ body{
 }
 #main-contents .title{
 	padding: 30px 15px;
+	color: blue;
 }
 
 #main-contents .box{
@@ -107,10 +109,10 @@ body{
 	margin-bottom: 15px;
 }
 #main-contents .box h4{
-	font-family: 'Arial',sans-serif;
 	font-weight: 600;
 	font-size: 20px;
 	margin-bottom: 20px;
+	color: blue;
 }
 #main-contents .box p{
 	font-family: 'Arial',sans-serif;
